@@ -1,0 +1,16 @@
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+
+# Dataset
+data/*
+!data/data.yaml
+
+# Training runs and checkpoints
+runs/
+
+.pytest_cache/
