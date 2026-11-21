@@ -53,8 +53,8 @@ These results are from the validation set, not the held-out test set.
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
-cd vision-ai-pcb
+git clone https://github.com/s-acear/PCB-Defect-Detection.git
+cd PCB-Defect-Detection
 ```
 
 Create and activate a virtual environment:
@@ -69,7 +69,6 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-
 ## Dataset Setup
 
 Place the PCB dataset in the following structure:
@@ -90,7 +89,7 @@ data/
 
 ## Training
 
-Run:
+Run the training script:
 
 ```bash
 python train.py
@@ -98,18 +97,15 @@ python train.py
 
 ## Live Detection
 
-The trained model is stored at:
-
-`models/pcb_best.pt`
+The trained model is stored at `models/pcb_best.pt`.
 
 Update the DroidCam camera URL in `live_demo.py` with your own phone's camera stream URL.
 
-Run:
+Run the live detection script:
 
 ```bash
 python live_demo.py
 ```
 
 Press `q` to exit the live detection window.
-
 
